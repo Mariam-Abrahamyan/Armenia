@@ -1,0 +1,77 @@
+div.slider {
+    width: 75vh;
+    height: 40vh;
+    animation: slider 12s linear infinite;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div.p{
+    width: calc(90% - 70vh);
+}
+
+h3 {
+    font-size: 25px;
+    text-align: center;
+}
+
+p {
+    font-size: 23px;
+}
+
+@keyframes slider {
+    0% {
+        background-image: url(../sevan.jpg);
+        filter: blur(0px) brightness(1);
+    }
+
+    17% {
+        background-image: url(../sevan.jpg);
+        filter: blur(0px) brightness(1);
+    }
+
+    21% {
+        filter: blur(5px) brightness(2.5);
+    }
+
+    25% {
+        background-image: url(../kotayk/images/Geghard.jpg);
+        filter: blur(0px) brightness(1);
+    }
+
+    42% {
+        background-image: url(../kotayk/images/Geghard.jpg);
+        filter: blur(0px) brightness(1);
+    }
+
+    46% {
+        filter: blur(5px) brightness(2.5);
+    }
+
+    50% {
+        background-image: url(../syunik/images/tatev.jpg);
+        filter: blur(0px) brightness(1);
+    }
+
+    67% {
+        background-image: url(../syunik/images/tatev.jpg);
+    }
+
+    75% {
+        background-image: url(../kotayk/images/qareri\ simfonia.jpg);
+    }
+
+    90% {
+        background-image: url(../kotayk/images/qareri\ simfonia.jpg);
+    }
+
+    100% {
+        background-image: url(../sevan.jpg);
+    }
+}

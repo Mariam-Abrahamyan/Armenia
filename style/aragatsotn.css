@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(113, 113, 191);
+}
+
+header {
+    background-image: url(../aragatsotn/images/Monument_to_Battle_of_Bash-Aparan.jpg), url(../aragatsotn/images/Saint\ Mesrop\ Mashtots\ Church.JPG), url(../aragatsotn/images/800px-Amberd_fortress_and_church_2009.jpg), url(../aragatsotn/images/Monument_to_Battle_of_Bash-Aparan.jpg), url(../aragatsotn/images/Saint\ Mesrop\ Mashtots\ Church.JPG), url(../aragatsotn/images/800px-Amberd_fortress_and_church_2009.jpg);
+    background-size: auto 100%;
+    position: static;
+    background-position-x: 0, 74vh, 149vh, 224vh, 298vh, 373vh;
+    animation: slider 32s linear infinite;
+}
+
+nav {
+    top: 0;
+}
+main{
+    min-height: 38vw;
+    height: unset;
+}
+
+@keyframes slider {
+    0% {
+        background-position-x: 0, 65vh, 130vh, 195vh, 260vh, 325vh;
+    }
+
+    100% {
+        background-position-x: -165vh, -130vh, -65vh, 0, 65vh, 130vh;
+    }
+}

@@ -1,0 +1,24 @@
+p, div{
+    font-size: 25px;
+}
+
+p img {
+    float: left;
+    margin-right: 25px;
+}
+
+table.info{
+    float:right;
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin-left: 25px;
+}
+table.info th{
+    background-color: #bebebe;
+    padding: 5px 10px;
+}
+table.info td{
+    background-color: white;
+    padding: 5px 10px;
+}
+

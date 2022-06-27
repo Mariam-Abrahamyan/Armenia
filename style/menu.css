@@ -1,0 +1,79 @@
+nav {
+    position: sticky;
+    top: calc(97.6px + 2vh);
+    background-color: rgb(125, 125, 196);
+    padding: 1.5vh;
+    z-index: 1;
+  
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0.5em;
+    background-color: rgb(73, 73, 112);
+    color: white;
+    cursor: pointer;
+    position: relative;
+    
+    
+}
+
+.menu>li,
+.menu>a {
+    margin: 5px;
+}
+
+
+.menu li:hover {
+    background-color: rgb(107, 107, 107);
+}
+
+.menu a {
+    text-decoration: none;
+    
+}
+
+.menu li ul {
+    position: absolute;
+    left: 0;
+    top: 2em;
+    display: none;
+    background-color: rgb(150, 150, 150);
+    padding: 0;
+    z-index: 2;
+    
+}
+
+.menu li ul li {
+    display: block;
+    background-color: rgb(150, 150, 150);
+    min-width: calc(100% - 1em);
+    width: max-content;
+}
+
+.menu li ul a {
+    margin: 0;
+    
+}
+
+.menu li:hover ul {
+    display: block;
+}
+
+.menu li ul li:hover {
+    background-color: rgb(175, 175, 175);
+}
+
+.menu .active {
+    background-color: rgb(39, 39, 68) !important;
+}

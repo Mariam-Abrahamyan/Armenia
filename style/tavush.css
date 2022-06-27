@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(113, 113, 191);
+}
+
+header {
+    background-image: url(../tavush/images/Goshavank3.jpg), url(../tavush/images/haghartsin.jpg), url(../tavush/images/Lastiver_cave_complex_03.jpg), url(../tavush/images/Goshavank3.jpg), url(../tavush/images/haghartsin.jpg), url(../tavush/images/Lastiver_cave_complex_03.jpg);
+    background-size: auto 100%;
+    position: static;
+    background-position-x: 0, 65vh, 130vh, 195vh, 260vh, 325vh;
+    animation: slider 32s linear infinite;
+}
+
+nav {
+    top: 0;
+}
+main{
+    min-height: 38vw;
+    height: unset;
+}
+
+@keyframes slider {
+    0% {
+        background-position-x:  0, 65vh, 130vh, 195vh, 260vh, 325vh;
+    }
+
+    100% {
+        background-position-x: -195vh, -130vh, -65vh, 0, 65vh, 130vh;
+    }
+}
